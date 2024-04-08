@@ -1,0 +1,35 @@
+---
+title: APIShield
+description: A lightweight Java framework for secure WebAPI communication with integrated security policies and ready-to-use solutions for frontend and backend.
+repository: 0xlau/APIShield
+date: 2022-12-16
+published: true
+---
+
+APIShield (又名：API盾) 是一款集成各种 WebAPI 安全策略方案的轻量级 JAVA 框架，免于在设计复杂的系统中因 WebAPI 的安全问题而焦头烂额。并且它还提供了一整套前后端 WebAPI 响应或请求的解决方案，只需要简单配置您即可信手拈来。
+
+APIShield 旨在以简单、优雅的方式完成系统接口安全校验或加解密部分，以最常用的MD5摘要签名校验为例，您只需要将注解放在对应方法或类上即可使用。
+
+下面是一个最基本的示例：
+
+```java
+// SpringBoot 示例
+@RestController
+@RequestMapping("/api")
+@ApiShieldUserAgent(value = {UA.DEV_WECHAT}, forbids = {UA.DEV_MOBILE})
+public class ApiController {
+
+    @GetMapping("/queryStu")
+    @ApiShieldCheckTimestamp
+    @ApiShieldDigestSignature
+    public String queryStudent(Student stu){
+        return "success";
+    }
+}
+```
+
+```bash
+# 微信PC端请求接口-QueryString携带Sign 成功示例
+> curl http://127.0.0.1/api/queryStu?name=张三&age=18&apishield-ts=1670945512652&apishield-sign=99d35676c36acac696f0a424dcf34ca1
+success
+```

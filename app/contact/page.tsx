@@ -1,27 +1,45 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Twitter, Chrome, Rss, Tv } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
+		icon: <Github size={20} />,
+		href: "https://github.com/0xlau",
+		label: "Github",
+		handle: "@0xlau",
+	},
+	{
 		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://twitter.com/thetimothylau",
 		label: "Twitter",
-		handle: "@chronark_",
+		handle: "@thetimothylau",
+	},
+	{
+		icon: <Tv size={20} />,
+		href: "https://space.bilibili.com/393341686",
+		label: "Bilibili",
+		handle: "码农小易",
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		href: "mailto:timothy-lau@outlook.com",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "timothy-lau@outlook.com",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
-		label: "Github",
-		handle: "chronark",
+		icon: <Chrome size={20} />,
+		href: "https://chromewebstore.google.com/search/Timothy%20Lau",
+		label: "Chrome Web Store",
+		handle: "Timothy Lau",
+	},
+	{
+		icon: <Rss size={20} />,
+		href: "https://blog.0xlau.dev",
+		label: "Blog",
+		handle: "blog.0xlau.dev",
 	},
 ];
 
@@ -36,7 +54,7 @@ export default function Example() {
 							<Link
 								href={s.href}
 								target="_blank"
-								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-8"
 							>
 								<span
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"

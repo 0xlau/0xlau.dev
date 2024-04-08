@@ -1,0 +1,57 @@
+---
+title: BiliPlus
+description: A Chrome/Edge extension to feel better in bilibili.com
+repository: 0xlau/biliplus
+url: https://chromewebstore.google.com/detail/liddcdcjkpeaiblhebgihpmcaknpgbgk
+date: 2023-02-29
+published: true
+---
+
+<div align="center">
+  <img src="https://files.0xlau.dev/blog/images/202404080949067.webp"/>
+</div>
+
+[Bilibili.com](https://bilibili.com) actually has a perfect user experience, but as a developer who pays attention to details, there may still be some areas that make us uncomfortable, so this extension was born.
+
+Principle:
+* Does not affect the original appearance.
+* Maintain consistent Bilibili style.
+* If you feel uncomfortable in Bilibili.com, come and request feature.
+
+### Install From Web Store
+
+1. Open the [Chrome Web Store](https://chrome.google.com/webstore/detail/liddcdcjkpeaiblhebgihpmcaknpgbgk).
+2. click `Add to Chrome`.
+3. If you're adding an extension:
+    * Review the types of data that the extension will be able to access.
+    * Click Add extension.
+You'll see your extensions in Chrome as buttons on the toolbar.
+
+### Manual Installation
+
+_Below is an example of how you can manual installing from source code._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/0xlau/biliplus.git
+   ```
+2. Execute Command to make a zip file
+   ```sh
+   # Linux/MacOS
+   > make
+
+   # Windows
+   > ./make.bat
+   ```
+3. Found a file called `biliplus.zip`
+   ```sh
+   > ls
+   biliplus.zip
+   ```
+4. Dragging `biliplus.zip` to Chrome/Edge Extension Page
+    ```sh
+    # Extension Page
+    chrome://extensions
+    edge://extensions
+    ```
+5. More details you can visit [chromebook](https://support.google.com/chromebook/topic/3415446) to install extensions.

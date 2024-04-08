@@ -6,24 +6,17 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "码农小易 - Timothy Lau",
+    template: "%s | 码农小易 - Timothy Lau",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "技术解刨 & 日常分享 & 开源贡献",
   openGraph: {
-    title: "chronark.com",
+    title: "0xlau.dev",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
-    locale: "en-US",
+      "技术解刨 & 日常分享 & 开源贡献",
+    url: "https://0xlau.dev",
+    siteName: "0xlau.dev",
+    locale: "zh-CN",
     type: "website",
   },
   robots: {
@@ -38,11 +31,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "thetimothylau",
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.ico",
   },
 };
 const inter = Inter({
