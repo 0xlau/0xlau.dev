@@ -34,7 +34,6 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
 					{project.description}
 				</p>
-				<img className="w-full" src={project.image}></img>
 			</article>
 		</Link>
 	);
